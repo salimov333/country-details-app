@@ -1,0 +1,22 @@
+{
+  "name": "country-details-app",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Provides information about countries.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./index.js",
+    "deploy": "chmod +x ./index.js && npm link",
+    "undeploy": "npm unlink -g"
+  },
+  "bin": {
+    "details": "./index.js"
+  },
+  "author": "salimov333",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1"
+  }
+}
